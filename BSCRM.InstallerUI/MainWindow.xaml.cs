@@ -24,7 +24,7 @@ namespace BSCRM.InstallerUI
         {
             OpenFileDialog dialog = new OpenFileDialog();
             dialog.Title = "Select Bigscreen.exe";
-            dialog.Filter = "Executable (*.exe) | *.exe | All files(*.*) | *.*";
+            dialog.Filter = "All files(*.*) | *.*";
             if (dialog.ShowDialog() == true)
             {
                 var loc = dialog.FileName;

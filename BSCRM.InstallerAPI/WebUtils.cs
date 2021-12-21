@@ -70,7 +70,7 @@ namespace BSCRM.InstallerAPI
             completionUpdate.Invoke(null, 50);
             string gameDir = Path.GetDirectoryName(gameExecPath);
 
-            if (File.Exists($"{gameDir}/MelonLoader"))
+            if (Directory.Exists($"{gameDir}\\MelonLoader"))
             {
                 Console.WriteLine("Already found modloader installation - uninstalling first.");
                 Directory.Delete($"{gameDir}/MelonLoader", true);

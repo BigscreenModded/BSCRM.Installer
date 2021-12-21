@@ -48,7 +48,7 @@ namespace BSCRM.InstallerAPI
 
         public static async void DownloadAndInstall(string versionTag, string gameExecPath)
         {
-            string url = $"https://github.com/LavaGang/MelonLoader/releases/download/%e%/MelonLoader.x64.zip";
+            string url = $"https://github.com/BigscreenModded/MelonLoader/releases/download/%e%/MelonLoader.x64.zip";
             url = url.Replace("%e%", versionTag);
             WebClient webClient = new WebClient();
             Directory.CreateDirectory("./temp");
